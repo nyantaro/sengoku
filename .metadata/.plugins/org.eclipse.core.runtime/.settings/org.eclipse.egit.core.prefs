@@ -1,3 +1,3 @@
-GitRepositoriesView.GitDirectories=
-RepositorySearchDialogSearchPath=C\:\\tmp\\sekino\\github\\repo1
+GitRepositoriesView.GitDirectories=C\:\\git_repository\\.git;
+RepositorySearchDialogSearchPath=C\:\\git_repository
 eclipse.preferences.version=1

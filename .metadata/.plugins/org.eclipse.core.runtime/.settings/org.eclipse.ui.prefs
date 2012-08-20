@@ -1,4 +1,5 @@
-#Sun Oct 12 01:53:12 JST 2008
+DOCK_PERSPECTIVE_BAR=left
+ENABLE_ANIMATIONS=false
+SHOW_TEXT_ON_PERSPECTIVE_BAR=false
 eclipse.preferences.version=1
 showIntro=false
-ENABLE_ANIMATIONS=false

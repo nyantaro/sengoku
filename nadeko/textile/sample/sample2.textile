@@ -1,0 +1,55 @@
+h2. KyotoTycoonとは？KVSとは？
+
+* KVS(KeyValueStore)
+** 特徴
+*** 利点
+**** 参照スピードがRDBよりも早い
+**** DBのスケールアウトが容易
+*** 欠点
+**** 複雑な検索条件は指定できない。（できても遅い）
+**** indexが効かない（無い）
+**** INSERT/UPDATEは遅い（特に）
+**** トランザクションという概念がない
+** 主な用途
+*** RDBのキャッシュとして使用し、検索速度を短縮させる
+*** アクセススピードが求められる状況で、valueにJSONを格納してscala/Javaのクラスフィールドと相互変換を行う。
+** 使うべき状況
+*** アクセス速度が求められるシステム（データ登録が夜間バッチしかない・バッチサーバからしか登録されない）
+** 使うのを避けたほうがよい状況
+*** 登録・更新が頻繁に起こる（トランザクションが必要な)システム
+
+h2. 概要
+
+http://www.slideshare.net/estraier/kyoto-tycoon-guide-in-japanese
+
+h2. インストール(Linux)
+
+概要のslideを参照
+
+h2. インストール(Mac)
+
+homebrewでインストール
+
+h2. 起動・停止方法
+
+概要のslideを参照(P.23)
+
+h2. 使用方法
+
+* 概要のslideを参照(P.25)
+** ktremotemgr set key value
+* jsonを入れる場合は以下(''でくくる)
+** ktremotemgr set key '{"akey":"avalue","bkey":"bvalue"}'
+
+
+
+コメント
+
+
+添付ファイル
+任意のコメント
+別のファイルを追加 (最大サイズ: 5 GB)
+
+ プレビュー
+ロード中...
+Powered by Redmine c 2006-2009 Jean-Philippe Lang
